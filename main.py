@@ -4,7 +4,7 @@ from ttkthemes import ThemedTk
 
 class AdwareDetectionSystem:
     def __init__(self):
-        self.root = ThemedTk(theme="equilux")
+        self.root = ThemedTk(theme="breeze")
         self.root.title("Adware Detection System")
         self.root.geometry("800x600")
         
