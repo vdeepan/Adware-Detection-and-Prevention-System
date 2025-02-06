@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.gitignore
 
 # Ignore virtual environments
 venv/
@@ -15,4 +16,3 @@ venv/
 # Ignore log and temp files
 *.log
 *.tmp
-
