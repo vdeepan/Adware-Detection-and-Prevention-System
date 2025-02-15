@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
 from ttkthemes import ThemedTk
+import realtime_protection 
+
 
 class AdwareDetectionSystem:
     def __init__(self):
@@ -113,13 +115,16 @@ class AdwareDetectionSystem:
     def full_scan(self):
         self.status_var.set("Full system scan in progress...")
         self.progress_var.set(0)
+        realtime_protection.full_system_scan()
         # Add scan logic here
+
 
     def custom_scan(self):
         folder = filedialog.askdirectory()
         if folder:
             self.status_var.set(f"Scanning {folder}...")
             self.progress_var.set(0)
+            realtime_protection.custom_scan(folder)
             # Add scan logic here
 
     def delete_quarantined(self):
